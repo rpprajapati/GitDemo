@@ -14,6 +14,8 @@ public class stepDefiantion {
     @Given("^User is on NetBanking landing page$")
     public void user_is_on_netbanking_landing_page() throws Throwable {
        System.out.println("Navigate to Login URL");
+       System.out.println("URL is upload");
+       //new change
     }
 
     @When("^User login into application with username \"([^\"]*)\" and password \"([^\"]*)\"$")
@@ -21,17 +23,21 @@ public class stepDefiantion {
         // Write code here that turns the phrase above into concrete actions
         System.out.println(arg1);
         System.out.println(arg2);
+        System.out.println("valid credential provided");
+        //new change
     }
 
     @Then("^Home page is populated$")
     public void home_page_is_populated() throws Throwable {
         System.out.println("Validated Home page");
+        System.out.println("Login successful");
     }
     @And("^Cards displayed are \"([^\"]*)\"$")
     public void cards_displayed_are(String arg1) throws Throwable {
         
     	System.out.println(arg1);
     	System.out.println("========================================================================");
+    	System.out.println("Cards are display as per UR");
     }
 
     @Given("^User is on Login page$")
