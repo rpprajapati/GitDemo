@@ -43,6 +43,7 @@ public class stepDefiantion {
     @Given("^User is on Login page$")
     public void user_is_on_login_page() throws Throwable {
         System.out.println("Login page open");
+        System.out.println("Login page just open");
     }
 
     @When("^User login in to application with (.+) and (.+)$")
